@@ -4,5 +4,6 @@ if [ -f $1/webpack.coffee ]; then
   echo "Webpack buildpack"
   exit 0
 else
+  echo "Couldn't find webpack.coffee"
   exit 1
 fi
